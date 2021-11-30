@@ -8,7 +8,7 @@ class CreateImagensTable extends Migration
 {
     /**
      * Run the migrations.
-     *
+     *aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
      * @return void
      */
     public function up()
