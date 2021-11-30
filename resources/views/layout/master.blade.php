@@ -21,7 +21,7 @@
   @include('layout.partials.nav')
  @yield('content')
 
-<p>gaayyyyy</p>
+<p>motaaaaa</p>
 
   @include('layout.partials.footer')
   <script src="{{asset('https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')}}" ></script>
