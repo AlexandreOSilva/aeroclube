@@ -1,6 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 |boas
 */
 
-Route::get('/', function () {
-    return view('index')->with('menuOption','I');
-   })->name('gm.index');
+Route::get('/', [PageController::class,'index'])->name('aeroclube.index');
+Route::get('/contacts', [PageController::class,'contacts'])->name('aeroclube.contacts');
+Route::get('/admin', [PageController::class,'admin'])->name('admin');
+
+
+
+Auth::routes();
