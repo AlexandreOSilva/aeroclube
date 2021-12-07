@@ -3,6 +3,6 @@
 
 @section('content')
 
-index
+index oreq
 
 @endsection
