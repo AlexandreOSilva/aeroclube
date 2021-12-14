@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="ProjetoAerodromo/site/Home/css/Home.css">
+<link rel="stylesheet" href={{asset('css/Home.css')}}>
 
 @extends('layout.master')
 @section('title', 'Aero Clube de Leiria - Home')
@@ -10,7 +10,7 @@
 
 <!-- Header with full-height image -->
 
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home" style="margin-top:  25%;">
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
     <div class="w3-display-left w3-text-white" style="padding:48px">
       <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
       <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
@@ -37,7 +37,7 @@
         <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> Mais info</a></p>
       </div>
       <div class="w3-col m6">
-        <img class="w3-image w3-round-large" src="/ProjetoAerodromo/site/Home/imagens/Batismodevoo/b1 (1).jpg" alt="Buildings" width="700" height="394">
+        <img class="w3-image w3-round-large" src="img/Batismodevoo/b1.jpg" alt="Buildings" width="700" height="394">
       </div>
     </div>
   </div>
