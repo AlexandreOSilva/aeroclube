@@ -9,7 +9,7 @@ body, html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url(img/Batismodevoo/b2.jpg);
+  background-image: url("../img/Batismodevoo/b2.jpg");
   min-height: 100%;
 }
 
