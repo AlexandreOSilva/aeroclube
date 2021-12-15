@@ -13,7 +13,7 @@
           </ul>
         </li>
 
-        <li><a href="{{route('aeroclube.frota')}}">Frotaaaa</a></li>
+        <li><a href="{{route('aeroclube.frota')}}">Frota</a></li>
         <li><a href="{{route('aeroclube.contacts')}}">Contacts</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
