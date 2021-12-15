@@ -26,6 +26,7 @@ class User extends Authenticatable
         'rua',
         'morada',
         'codigo_postal',
+        'role',
     ];
 
     /**

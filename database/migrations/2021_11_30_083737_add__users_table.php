@@ -19,6 +19,7 @@ class AddUsersTable extends Migration
             $table->string('rua', 255)->nullable();
             $table->string('codigo_postal', 255)->nullable();
             $table->string('morada', 255)->nullable();
+            $table->enum('role', ['C', 'A'])->default('C');
         });
     }
 
