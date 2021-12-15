@@ -15,5 +15,8 @@ class PageController extends Controller
     function admin() {
         return view('admin');
     }
+    function faq() {
+        return view('faq');
+    }
 
 }
