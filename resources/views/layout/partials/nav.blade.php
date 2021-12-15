@@ -1,4 +1,4 @@
-  <nav class="navbar navbar-inverse" style="position:fixed;top:0;width: 100%;">
+  <nav class="navbar navbar-inverse" style="position:fixed;top:0;width:100%;z-index:9999">
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="{{route('aeroclube.index')}}"><img src="{{asset('img/logo.png')}}" alt="logo" style="width:75px;display:inline-block;margin-right:5px;">Aeroclube de Leiria</a>
