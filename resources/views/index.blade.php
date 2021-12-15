@@ -13,7 +13,7 @@
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
     <div class="w3-display-left w3-text-white" style="padding:48px">
       <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
-      <span class="w3-xxlarge w3-hide-large w3-hide-medium">fq  wefqweStart something that matters</span><br>
+      <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
       <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
       <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
     </div>
@@ -32,7 +32,7 @@
   <div class="w3-container w3-light-grey" style="padding:128px 16px">
     <div class="w3-row-padding">
       <div class="w3-col m6">
-        <h3>Quem somos</h3>
+        <h3>e6yu356iu356u3Quem somos</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
         <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> Mais info</a></p>
       </div>
