@@ -19,6 +19,7 @@ use App\Http\Controllers\PageController;
 Route::get('/', [PageController::class,'index'])->name('aeroclube.index');
 Route::get('/contacts', [PageController::class,'contacts'])->name('aeroclube.contacts');
 Route::get('/admin', [PageController::class,'admin'])->name('admin');
+Route::get('/faq', [PageController::class,'faq'])->name('faq');
 
 
 
