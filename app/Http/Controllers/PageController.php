@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Faq;
 use App\Models\Aviao;
 use App\Models\Missao;
 use App\Models\Servico;
@@ -38,4 +39,10 @@ class PageController extends Controller
         $missao=Missao::all();
         return view('missao', compact('missao'));
     }
+    function faq()
+    {
+        $faqs=Faq::all();
+        return view('faq', compact('faq'));
+    }
+
 }

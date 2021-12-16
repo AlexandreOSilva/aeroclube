@@ -1,0 +1,110 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+.logo {
+    background-color: rgb(41, 40, 38);
+}
+
+.logo img {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+    padding: 25px 0px 0px 0px;
+}
+
+#faqs {
+    color: rgba(249, 211, 66);
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(41, 40, 38);
+    padding-top: 25px;
+}
+
+#sub {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(41, 40, 38);
+    padding: 20px 0 20px 0;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.question {
+    background-color: rgb(41, 40, 38);
+    border-radius: 6px;
+    margin-bottom: 16px;
+    padding: 16px;
+    box-shadow: 8px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question-link {
+    font-size: 25px;
+    color: rgba(249, 211, 66);
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.question-link ion-icon {
+    color: rgba(249, 211, 66);
+    padding: 8px;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(249, 211, 66);
+    transition: max-height 650ms;
+}
+
+.answer::before {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 90%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.answer p{
+    color: rgb(41, 40, 38);
+    font-size: 22px;
+    padding: 32px;
+}
+
+.question:target .answer{
+    max-height: 320px;
+}
+
+.question:target .question-link .ion-md-add{
+    display: none;
+}
