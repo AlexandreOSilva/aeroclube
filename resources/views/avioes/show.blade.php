@@ -15,6 +15,11 @@
 
                 @endif
                 <div><strong>Nome:</strong> {{ $aviao->nome }} </div>
+                <div><strong>Kilómetros realizados:</strong> {{ $aviao->kmsrealizados }} </div>
+                <div><strong>Nº Litros:</strong> {{ $aviao->n_litros }} </div>
+                <div><strong>Lugares:</strong> {{ $aviao->total_poltronas }} </div>
+                <div><strong>Fornecedores:</strong> {{ $aviao->fornecedores }} </div>
+
 
             </div>
         </div>
