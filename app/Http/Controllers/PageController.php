@@ -27,7 +27,7 @@ class PageController extends Controller
     }
     function servico()
     {
-        $avioes=Servico::all();
+        $servicos=Servico::all();
         return view('batismos',compact('servicos'));
     }
 }
