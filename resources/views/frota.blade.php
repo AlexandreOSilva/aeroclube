@@ -24,104 +24,35 @@
 
 
     <div class="flex-wrap d-flex justify-content-center">
+        @foreach ($avioes as $aviao)
+
+
       <div class="card" style="width: 30rem;">
-        <img class="card-img-top" src="img/frota/cessna172.jpg" alt="vh" style="width:100%">
+        <img class="card-img-top" src="{{asset('storage/img_avioes/'.$aviao->imagem)}}" alt="img avião" style="width:100%">
         <div class="card-body">
-          <h2 class="card-title">CESSNA 172N SKYHAWK II</h2>
+          <h2 class="card-title">{{strtoupper($aviao->nome)}}</h2>
           <p class="card-text">
-            <strong>Engine:</strong>
-            LYCOMING O360 A4M 180CV @2700RPM
+            <strong>Fornecedores:</strong>
+            {{strtoupper($aviao->fornecedores)}}
             <br>
-            <strong>Fuel Capacity:</strong>
-            54 USGAL USABLE (LONG RANGE)
+            <strong>Nº de litros:</strong>
+            {{strtoupper($aviao->n_litros)}}
             <br>
-            <strong>MTOW:</strong>
-            1157KG
+            <strong>Kms realizados:</strong>
+            {{strtoupper($aviao->kmsrealizados)}}
             <br>
-            <strong>Seats:</strong>
-            4
+            <strong>Lugares:</strong>
+            {{strtoupper($aviao->total_poltronas)}}
             <br>
-            <strong>Avionic/Instruments:</strong>
+
           </p>
-          <ul>
-            <li>
 
-              1X VOR, 1X ADF, TRIG TY96 8.33KHZ, EGT
-            </li>
-            <li>
-
-              XPDR S
-            </li>
-          </ul>
           </p>
         </div>
       </div>
 
-      <div class="card" style="width: 30rem;">
-        <img class="card-img-top" src="img/frota/reims.jpg" alt="vh" style="width:100%">
-        <div class="card-body">
-          <h2 class="card-title">REIMS/CESSNA F-150H</h2>
-          <p class="card-text">
-            <strong>Engine:</strong>
-            CONTINENTAL O-200 100CV @2750RPM
-            <br>
-            <strong>Fuel Capacity:</strong>
-            22,5 USGAL USABLE
-            <br>
-            <strong>MTOW:</strong>
-            726KG
-            <br>
-            <strong>Seats:</strong>
-            2
-            <br>
-            <strong>Avionic/Instruments:</strong>
-          </p>
-          <ul>
-            <li>
+      @endforeach
 
-              1X VOR, TRIG TY96 8.33KHZ, EGT, CHT
-            </li>
-            <li>
-
-              TCAS, GPS BENDIX/KING KMD 150/STORMSCOPE,
-            </li>
-            <li>
-
-              JPI FUEL SCAN 450, XPDR S
-            </li>
-          </ul>
-          </p>
-        </div>
-
-
-      </div>
-      <div class="card" style="width: 30rem;">
-        <img class="card-img-top" src="img/frota/vh.jpg" alt="vh" style="width:100%">
-        <div class="card-body">
-          <h2 class="card-title">PIPER PA-18-150 SUPER CUB</h2>
-          <p class="card-text">
-            <strong>Engine:</strong>
-            LYCOMING O-320 150CV @2700RPM
-            <br>
-            <strong>Fuel Capacity:</strong>
-            36 USGAL
-            <br>
-            <strong>MTOW:</strong>
-            794KG
-            <br>
-            <strong>Seats:</strong>
-            2
-            <br>
-            <strong>Avionic/Instruments:</strong>
-          </p>
-          <ul>
-            <li>
-
-              NARCO XPDR MODE C , RADIO 25KHZ
-            </li>
-          </ul>
-          </p>
-        </div>
       </div>
     </div>
 

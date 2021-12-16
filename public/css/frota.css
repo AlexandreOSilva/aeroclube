@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+#corpo{
+  padding-top: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+
+
+.frota{
+  text-align: center;
+  font-size: 20pt;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column, .column2 {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.column h2, p, .column2 h2, p{
+  padding-left: 3%;
+}
+
+h2, p{
+  padding-left: 3%;
+}
+
+/* Clearfix (clear floats) */
+.row::after, .row2::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+
+
+element.style{
+  width: 30rem;
+}
+
+.card{
+  margin: 1% 15px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+}
+
+
+
+
+.flex-wrap {
+  -ms-flex-wrap: wrap!important;
+  flex-wrap: wrap!important;
+}
+
+.d-flex {
+  display: -ms-flexbox!important;
+  display: flex!important;
+}
+
+.justify-content-center {
+  -ms-flex-pack: center!important;
+  justify-content: center!important;
+}
+
+.flex-wrap d-flex justify-content-center{
+  padding-bottom:5% ;
+}
+
+.page-section{
+  padding: 8% 5%;
+  min-height: 900x;
+}
+
+main{
+  display: block;
+}
