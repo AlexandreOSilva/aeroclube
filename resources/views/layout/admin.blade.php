@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Dashboard - Games and Multimedia</title>
+  <title>Dashboard - Aeroclube de Leiria</title>
 
   <!-- Custom fonts for this template -->
   <link href="{{asset('vendor/fontawesome-free/css/all.min.css')}}" rel=" stylesheet" type="text/css">
@@ -35,11 +35,10 @@
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/admin">
-        <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-gamepad"></i>
 
-        </div>
-        <div class="sidebar-brand-text mx-3">Games and Multimedia</div>
+          <img src="../img/logo_.png" alt="" width="150px">
+
+
       </a>
 
       <!-- Divider -->
@@ -66,8 +65,8 @@
         <div id="collapseUsers" class="collapse" aria-labelledby="headingUsers" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
 
-            <a class="collapse-item" href="#">Listar Users</a>
-            <a class="collapse-item" href="#">Adicionar User</a>
+            <a class="collapse-item" href="{{route('users.index')}}">Listar Users</a>
+            <a class="collapse-item" href="{{route('users.create')}}">Adicionar User</a>
           </div>
         </div>
       </li>
@@ -167,7 +166,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Games and Multimedia 2019</span>
+            <span>Copyright &copy; Aero Clube de Leiria 2019</span>
           </div>
         </div>
       </footer>

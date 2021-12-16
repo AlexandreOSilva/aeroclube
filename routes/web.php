@@ -25,5 +25,6 @@ Route::get('/batismos', [PageController::class,'servico'])->name('aeroclube.bati
 
 
 Route::resource('avioes',Aviaocontroller::class)->parameters(['avioes'=>'aviao']);
+Route::resource('users',Usercontroller::class)->parameters(['users'=>'user']);
 
 Auth::routes();

@@ -10,7 +10,7 @@
 		</div>
 		<div class="card-body">
 
-			<form method="POST" action="#" class="form-group" enctype="multipart/form-data">
+			<form method="POST" action="{{ route('users.update', $users) }}" class="form-group" enctype="multipart/form-data">
 				@include('users.partials.add-edit')
 				<div class="form-group">
 					<button type="submit" class="btn btn-success" name="ok">Save</button>
@@ -21,7 +21,7 @@
 
 			</form>
 
-			<a href="#" class="btn btn-primary">Enviar email de ativação</a>
+			<a href="{{ route('users.index') }}" class="btn btn-primary">Enviar email de ativação</a>
 		</div>
 	</div>
 </div>
