@@ -16,4 +16,9 @@ class Servico extends Model
         }
 }
 
+//foreach($servico->imagens() as $imagem){
+// <img src="{{asset('storage/img_servicos/'.$imagem)}}" alt="Serv img">
+
+//}
+
 
