@@ -86,7 +86,21 @@
           </div>
         </div>
       </li>
+   <!-- Nav Item - Pages Collapse Menu -->
+   <li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAv" aria-expanded="true"
+      aria-controls="collapseAv">
+      <i class="fas fa-users"></i>
+      <span>Aviões</span>
+    </a>
+    <div id="collapseAv" class="collapse" aria-labelledby="headingAv" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
 
+        <a class="collapse-item" href="{{route('avioes.index')}}">Listar Aviões</a>
+        <a class="collapse-item" href="{{route('avioes.create')}}">Adicionar Avião</a>
+      </div>
+    </div>
+  </li>
 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">

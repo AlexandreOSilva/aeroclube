@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Aviao;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Storage;
 
 class Aviaocontroller extends Controller
 {
@@ -15,7 +16,8 @@ class Aviaocontroller extends Controller
      */
     public function index()
     {
-        //
+        $avioes = Aviao::all();
+        return view('avioes.list', compact('avioes'));
     }
 
     /**
@@ -25,7 +27,9 @@ class Aviaocontroller extends Controller
      */
     public function create()
     {
-        //
+
+        $aviao = new Aviao;
+        return view('avioes.add', compact( "aviao"));
     }
 
     /**
@@ -34,9 +38,18 @@ class Aviaocontroller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(AviaoRequest $request)
     {
-        //
+        $fields = $request->validated();
+        $aviao = new Aviao;
+        $aviao->fill($fields);
+
+        if ($request->hasFile('imagem')) {
+            $img_path = $request->file('imagem')->store('public/img_avioes');
+            $aviao->imagem = basename($img_path);
+        }
+        $aviao->save();
+        return redirect()->route('avioes.index')->with('success', 'Aviao successfully created');
     }
 
     /**
@@ -47,7 +60,7 @@ class Aviaocontroller extends Controller
      */
     public function show(Aviao $aviao)
     {
-        //
+        return view('avioes.show', compact('aviao'));
     }
 
     /**
@@ -58,7 +71,7 @@ class Aviaocontroller extends Controller
      */
     public function edit(Aviao $aviao)
     {
-        //
+        return view('avioes.edit', compact('aviao'));
     }
 
     /**
@@ -68,9 +81,20 @@ class Aviaocontroller extends Controller
      * @param  \App\Models\Aviao  $aviao
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Aviao $aviao)
+    public function update(AviaoRequest $request, Aviao $aviao)
     {
-        //
+        $fields = $request->validated();
+        $aviao->fill($fields);
+        if ($request->hasFile('imagem')) {
+            if (!empty($aviao->imagem)) {
+                Storage::disk('public')->delete('imgs_avioes/' . $aviao->imagem);
+            }
+            $img_path = $request->file('imagem')->store('public/img_avioes');
+            $aviao->imagem = basename($img_path);
+        }
+
+        $aviao->save();
+        return redirect()->route('avioes.index')->with('success', 'Aviao successfully updated');
     }
 
     /**
@@ -81,6 +105,11 @@ class Aviaocontroller extends Controller
      */
     public function destroy(Aviao $aviao)
     {
-        //
+        if (!empty($aviao->imagem)) {
+            Storage::disk('public')->delete('img_avioes/' . $aviao->imagem);
+        }
+        $aviao->delete();
+        return redirect()->route('avioes.index')->with('success', 'Aviao successfully deleted');
     }
+
 }

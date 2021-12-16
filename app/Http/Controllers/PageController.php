@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Aviao;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -20,6 +21,7 @@ class PageController extends Controller
     }
     function frota()
     {
-        return view('frota');
+        $avioes=Aviao::all();
+        return view('frota',compact('avioes'));
     }
 }

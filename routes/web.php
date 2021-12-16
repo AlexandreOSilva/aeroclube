@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Aviaocontroller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -22,5 +23,6 @@ Route::get('/admin', [PageController::class,'admin'])->name('admin');
 Route::get('/frota', [PageController::class,'frota'])->name('aeroclube.frota');
 
 
+Route::resource('avioes',Aviaocontroller::class)->parameters(['avioes'=>'aviao']);
 
 Auth::routes();
