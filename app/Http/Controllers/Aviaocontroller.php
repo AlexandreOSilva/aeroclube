@@ -87,7 +87,7 @@ class Aviaocontroller extends Controller
         $aviao->fill($fields);
         if ($request->hasFile('imagem')) {
             if (!empty($aviao->imagem)) {
-                Storage::disk('public')->delete('imgs_avioes/' . $aviao->imagem);
+                Storage::disk('public')->delete('img_avioes/' . $aviao->imagem);
             }
             $img_path = $request->file('imagem')->store('public/img_avioes');
             $aviao->imagem = basename($img_path);

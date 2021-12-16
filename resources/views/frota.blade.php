@@ -33,16 +33,16 @@
           <h2 class="card-title">{{strtoupper($aviao->nome)}}</h2>
           <p class="card-text">
             <strong>Fornecedores:</strong>
-            {{strtoupper($aviao->fornecedores)}}
+            {{($aviao->fornecedores)}}
             <br>
             <strong>Nº de litros:</strong>
-            {{strtoupper($aviao->n_litros)}}
+            {{($aviao->n_litros)}}
             <br>
             <strong>Kms realizados:</strong>
-            {{strtoupper($aviao->kmsrealizados)}}
+            {{($aviao->kmsrealizados)}}
             <br>
             <strong>Lugares:</strong>
-            {{strtoupper($aviao->total_poltronas)}}
+            {{($aviao->total_poltronas)}}
             <br>
 
           </p>
