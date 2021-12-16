@@ -22,6 +22,8 @@ Route::get('/contacts', [PageController::class,'contacts'])->name('aeroclube.con
 Route::get('/admin', [PageController::class,'admin'])->name('admin');
 Route::get('/frota', [PageController::class,'frota'])->name('aeroclube.frota');
 Route::get('/batismos', [PageController::class,'servico'])->name('aeroclube.batismos');
+Route::get('/missao', [PageController::class,'missao'])->name('aeroclube.missao');
+Route::get('/faq', [PageController::class,'faq'])->name('aeroclube.faq');
 
 
 Route::resource('avioes',Aviaocontroller::class)->parameters(['avioes'=>'aviao']);

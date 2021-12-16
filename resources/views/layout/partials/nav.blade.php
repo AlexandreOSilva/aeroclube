@@ -4,7 +4,7 @@
         <a class="navbar-brand" href="{{route('aeroclube.index')}}"><img src="{{asset('img/logo.png')}}" alt="logo" style="width:75px;display:inline-block;margin-right:5px;">Aeroclube de Leiria</a>
       </div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li> <a href="{{route('aeroclube.index')}}">Home</a></li>
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Serviços <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="{{route('aeroclube.batismos')}}">Batismos</a></li>
@@ -14,6 +14,8 @@
         </li>
 
         <li><a href="{{route('aeroclube.frota')}}">Frota</a></li>
+        <li><a href="{{route('aeroclube.missao')}}">Missão</a></li>
+        <li><a href="{{route('aeroclube.faq')}}">FAQs</a></li>
         <li><a href="{{route('aeroclube.contacts')}}">Contacts</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">

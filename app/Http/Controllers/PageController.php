@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Aviao;
-use Illuminate\Http\Request;
+use App\Models\Missao;
 use App\Models\Servico;
+use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
@@ -31,5 +32,10 @@ class PageController extends Controller
     {
         $servicos=Servico::all();
         return view('batismos',compact('servicos'));
+    }
+    function missao()
+    {
+        $missao=Missao::all();
+        return view('missao', compact('missao'));
     }
 }
