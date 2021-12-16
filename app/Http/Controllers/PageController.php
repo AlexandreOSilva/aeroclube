@@ -24,4 +24,9 @@ class PageController extends Controller
         $avioes=Aviao::all();
         return view('frota',compact('avioes'));
     }
+    function servico()
+    {
+        $avioes=Servico::all();
+        return view('servico',compact('servicos'));
+    }
 }
