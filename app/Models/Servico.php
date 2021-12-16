@@ -2,12 +2,15 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Imagem;
+use App\Models\Servico;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Servico extends Model
 {
     use HasFactory;
+    protected $table="servico";
     protected $fillable = ['mais_info','descricao' ];
 
     public function imagens(){

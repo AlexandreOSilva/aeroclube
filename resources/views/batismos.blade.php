@@ -21,15 +21,8 @@
     </div>
     <div class="navbar1">
         <h2>Batismos</h2>
-        <p>Desvenda o prazer e sensação de voar!<br><br>
-
-            O batismo de voo é realizado por um piloto credenciado que atende a critérios específicos e consiste num passeio aéreo local, no qual poderá apreciar a paisagem e ,caso deseje, assumir por instantes os comandos da aeronave.<br><br>
-
-            Além de experiência própria, o batismo de voo é uma maravilhosa forma de presentear quem gosta. Para tal, basta entrar em contato com o ACL. Um voucher de batismo válido por um ano será enviado para si após o pagamento.<br><br>
-
-            O ACL disponibiliza duas modalidades de batismos de voo, uma de 30 minutos e outra com duração de 1 hora.<br><br>
-
-            <span>Crianças com mais de 5 anos são aceites apenas acompanhadas por um adulto.</span></p>
+        <p>{{($servico->descricao)}}
+           </p>
     </div>
     </div>
 </header>

@@ -14,7 +14,7 @@ class Servicocontroller extends Controller
      */
     public function index()
     {
-        $avioes = Aviao::all();
+        $servicos = Servico::all();
         return view('servicos.list', compact('servicos'));
     }
 

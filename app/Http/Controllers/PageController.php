@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Aviao;
 use Illuminate\Http\Request;
+use App\Models\Servico;
 
 class PageController extends Controller
 {
@@ -27,6 +28,6 @@ class PageController extends Controller
     function servico()
     {
         $avioes=Servico::all();
-        return view('servico',compact('servicos'));
+        return view('batismos',compact('servicos'));
     }
 }
