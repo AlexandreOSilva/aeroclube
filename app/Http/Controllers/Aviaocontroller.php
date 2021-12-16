@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Aviao;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use App\Http\Requests\AviaoRequest;
 use Illuminate\Support\Facades\Storage;
 
 class Aviaocontroller extends Controller
